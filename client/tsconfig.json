@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "ES6",
+        "target": "ES2022",
+        "lib": ["DOM", "DOM.Iterable", "ES2022"],
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "bundler",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "./dist/",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "baseUrl": "src",
+        "paths": {
+            "app/*": ["app/*"],
+            "entities/*": ["entities/*"],
+            "features/*": ["features/*"],
+            "pages/*": ["pages/*"],
+            "shared/*": ["shared/*"],
+            "widgets/*": ["widgets/*"],
+        },
+    },
+}

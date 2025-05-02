@@ -1,0 +1,84 @@
+{
+  "name": "datacave-client",
+  "version": "0.0.1",
+  "description": "",
+  "_comment": "main : index.js",
+  "author": "https://github.com/Cliff-JKL",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "dev": "nodemon --exec webpack serve --progress --mode=development",
+    "start": "node server.js",
+    "jsonServer": "json-server --watch db.json --port 3010",
+    "format": "prettier --write \"src/**/*.*\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint:common": "eslint .",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "lint:file": "eslint src/components/MDEditor.tsx --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@eslint/js": "^9.14.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "html-webpack-plugin": "^5.6.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.0.8",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.3",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.2.0",
+    "@uiw/react-md-editor": "^4.0.4",
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "json-server": "^1.0.0-beta.3",
+    "mobx": "^6.13.5",
+    "mobx-react-lite": "^4.0.7",
+    "mobx-utils": "^6.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-draggable": "^4.4.6",
+    "react-router-dom": "^6.28.0",
+    "react-transition-group": "^4.4.5",
+    "zod": "^3.24.0"
+  },
+  "overrides": {
+    "@eslint/eslintrc": {
+      "globals": ">=14"
+    },
+    "@babel/traverse": {
+      "globals": ">=14"
+    },
+    "@babel/plugin-transform-classes": {
+      "globals": ">=14"
+    }
+  }
+}
